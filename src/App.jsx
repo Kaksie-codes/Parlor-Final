@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css'
+import ReactGA from "react-ga4";
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import Homepage from './pages/Homepage';
@@ -11,6 +12,20 @@ import Servicespage from './pages/servicespage/Servicespage';
 import ScrollReveal from 'scrollreveal';
 
 function App() {
+  const trackingId = "G-KFL5DSSXMF";
+  ReactGA.initialize(trackingId);
+
+  // Send pageview with a custom path
+  ReactGA.send({ 
+    hitType: "pageview", 
+    page: window.location.pathname, 
+    // title: "Custom Title" 
+  });
+
+  // useEffect(() => {
+  //   ReactGA.pageview(window.location.pathname)
+  // },[])
+
   useEffect(() => {
     // Create a ScrollReveal configuration object
     const sr = ScrollReveal({
