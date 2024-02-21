@@ -12,15 +12,15 @@ import Servicespage from './pages/servicespage/Servicespage';
 import ScrollReveal from 'scrollreveal';
 
 function App() {
-  const trackingId = "G-KFL5DSSXMF";
-  ReactGA.initialize(trackingId);
+  // const measurementId = "G-KFL5DSSXMF";
+  // ReactGA.initialize(measurementId);
 
-  // Send pageview with a custom path
-  ReactGA.send({ 
-    hitType: "pageview", 
-    page: window.location.pathname, 
-    // title: "Custom Title" 
-  });
+  // // Send pageview with a custom path
+  // ReactGA.send({ 
+  //   hitType: "pageview", 
+  //   page: window.location.pathname, 
+  //   title: "Home Page" 
+  // });
 
   // useEffect(() => {
   //   ReactGA.pageview(window.location.pathname)

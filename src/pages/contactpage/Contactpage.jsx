@@ -2,9 +2,20 @@ import React, { useEffect, useState } from 'react'
 import Contact from '../../components/contact/Contact'
 import './contactpage.css'
 import Loading from '../../components/loading/Loading';
+import ReactGA from "react-ga4";
 
 const Contactpage = () => {
   const [isLoading, setIsLoading] = useState(true);
+
+  const measurementId = "G-KFL5DSSXMF";
+  ReactGA.initialize(measurementId);
+
+  // Send pageview with a custom path
+  ReactGA.send({ 
+    hitType: "pageview", 
+    page: window.location.pathname, 
+    title: "Contact Page" 
+  });
 
     useEffect(() => {
       const delay = 2000; // 2 seconds delay
