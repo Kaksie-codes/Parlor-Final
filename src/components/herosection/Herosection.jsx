@@ -60,7 +60,7 @@ const Herosection = () => {
                     <img src={HeroImg4} alt="" className='hero__img-4'/>
                 </div>
                 <div className="hero__data">
-                    <h1 className='hero__title'>Nigerian Ideas For Your Online Marketing</h1>
+                    <h1 className='hero__title'>Effortless Ideas For Your Online Marketing</h1>
                     <div className="dashed">
                         <img src={HeroImg5} alt=""/>
                     </div>
