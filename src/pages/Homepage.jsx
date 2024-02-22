@@ -9,7 +9,7 @@ import ReactGA from "react-ga4";
 const Homepage = () => {
   const [isLoading, setIsLoading] = useState(true);
 
-  const measurementId = "G-KFL5DSSXMF";
+  const measurementId = "G-8RG82WM011";
   ReactGA.initialize(measurementId);
 
   // Send pageview with a custom path
